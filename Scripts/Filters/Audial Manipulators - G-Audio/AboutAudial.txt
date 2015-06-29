@@ -1,0 +1,45 @@
+--------------------------------------------------
+		 	Audial Manipulators
+		Copyright © 2014 Atmospherium
+https://www.assetstore.unity3d.com/#/content/17032
+---------------------------------------------------
+
+Audial Manipulators are now compatible with G-Audio:
+you can add most of them as Track filters or Player filters just as 
+any other G-Audio filter. 
+
+Included for free with G-Audio:
+
+	* Filter *					 * compatibility *
+Distortion ( G-Audio version )    Track or Player
+Saturator  ( G-Audio version )    Track or Player
+Delay      ( G-Audio version )    Track only
+
+What you get in the full package:
+
+	* Filter *					 * compatibility *
+Compressor ( G-Audio version )    Track or Player
+Crusher    ( G-Audio version )    Track or Player
+Foldback D ( G-Audio version )    Track or Player
+Reverb     ( G-Audio version )    Track only
+
+In addition, standard Audial Manipulator components 
+can be applied to any audio source, including a G-Audio Player:
+
+Compressor  						
+Bit Crusher 
+Delay 			
+Distortion  
+Foldback Distortion 
+Fader 
+Pan Control
+Reverb 
+Saturator 
+State Variable Filter (Low/Hi/Band Pass, Low/Hi Shelf, Band Add) 
+Stereo Widener
+
+---------------------------------------------------
+
+Many thanks to Atmospherium!
+
+
