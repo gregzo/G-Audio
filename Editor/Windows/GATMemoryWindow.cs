@@ -43,8 +43,8 @@ public class GATMemoryWindow : EditorWindow
 		{
 			RefreshMemInfo();
 		}
-
-		this.title = "Memory Status";
+        this.titleContent.text = "Memory Status";
+        
 	}
 
 	void OnDisable()

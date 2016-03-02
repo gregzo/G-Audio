@@ -21,7 +21,7 @@ public class DataAllocatorConfigWindow : EditorWindow
 
 	void OnEnable()
 	{
-		this.title = "G-Audio Memory Configuration";
+		this.titleContent.text = "G-Audio Memory Configuration";
 	}
 
 	/*public void SetAllocator( GATDataAllocator allocator )
