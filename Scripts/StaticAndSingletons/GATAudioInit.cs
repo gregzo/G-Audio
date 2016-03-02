@@ -4,6 +4,7 @@
 //--------------------------------
 using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 namespace GAudio
 {
@@ -72,9 +73,9 @@ namespace GAudio
 			if( requestMic )
 			{
 				yield return Application.RequestUserAuthorization( UserAuthorization.Microphone );
-				if (Application.HasUserAuthorization( UserAuthorization.Microphone ) ) 
+				if (Application.HasUserAuthorization( UserAuthorization.Microphone ) )
 				{
-					Application.LoadLevel( levelToLoad );
+				    SceneManager.LoadScene(levelToLoad);
 				} 
 				else 
 				{
@@ -83,7 +84,7 @@ namespace GAudio
 			}
 			else
 			{
-				Application.LoadLevel( levelToLoad );
+			    SceneManager.LoadScene(levelToLoad);
 			}
 		}
 		
