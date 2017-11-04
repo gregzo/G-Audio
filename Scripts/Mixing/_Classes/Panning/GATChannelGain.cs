@@ -14,6 +14,8 @@ namespace GAudio
 		public int ChannelNumber{ get; protected set; }
 		
 		protected float _gain;
+
+		protected float _prevGain;
 		
 		public virtual float Gain
 		{
@@ -21,8 +23,9 @@ namespace GAudio
 			{
 				return _gain;
 			}
-			private set
+			set
 			{
+				_prevGain = _gain;
 				_gain = value;
 			}
 		}
@@ -43,21 +46,7 @@ namespace GAudio
 		public float InterpolationDelta{ get; private set; }
 		
 		bool  _needsUpdate;
-		
-		public override float Gain
-		{
-			get 
-			{
-				return _gain;
-			}
-			private set
-			{
-				_prevGain = _gain;
-				_gain = value;
-			}
-		}
-		
-		float _prevGain = 0f;
+
 		public float PrevGain{ get{ return _prevGain; } }
 		
 		float _nextGain;
