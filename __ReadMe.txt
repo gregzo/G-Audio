@@ -6,10 +6,6 @@
         support@g-audio-unity.com
 ----------------------------------------------
 
-Thank you for buying G-Audio!
-
-Head to www.G-Audio-Unity.com for documentation, video tutorials and forums.
-
 ---------------------------------------
 		 Release Notes
 ---------------------------------------
