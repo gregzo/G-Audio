@@ -77,7 +77,8 @@ namespace GAudio.Examples
 					_isFading = false;
 				}
 				
-				_line.SetColors( lineStartColor, lineEndColor );
+				_line.startColor = lineStartColor;
+				_line.endColor = lineEndColor;
 			}
 			
 			if( index == 7 )
@@ -98,7 +99,8 @@ namespace GAudio.Examples
 			{
 				lerpVal += Time.deltaTime * factor;
 				alpha = Mathf.Lerp( fromAlpha, 0f, lerpVal );
-				_line.SetColors( lineStartColor, new Color( lineEndColor.r, lineEndColor.g, lineEndColor.b, alpha ) );
+				_line.startColor = lineStartColor;
+				_line.endColor = new Color (lineEndColor.r, lineEndColor.g, lineEndColor.b, alpha);
 				yield return null;
 			}
 			

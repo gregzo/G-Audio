@@ -40,7 +40,7 @@ namespace GAudio
 		
 		protected override void SetVertexCount()
 		{
-			_lineRenderer.SetVertexCount( _vertexCount );
+			_lineRenderer.numPositions =  _vertexCount;
 		}
 		
 		protected override void HandleAudioDataUpdate()

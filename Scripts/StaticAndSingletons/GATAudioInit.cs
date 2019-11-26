@@ -75,7 +75,7 @@ namespace GAudio
 				yield return Application.RequestUserAuthorization( UserAuthorization.Microphone );
 				if (Application.HasUserAuthorization( UserAuthorization.Microphone ) )
 				{
-				    SceneManager.LoadScene(levelToLoad);
+					SceneManager.LoadScene( levelToLoad );
 				} 
 				else 
 				{
@@ -84,7 +84,7 @@ namespace GAudio
 			}
 			else
 			{
-			    SceneManager.LoadScene(levelToLoad);
+				SceneManager.LoadScene( levelToLoad );
 			}
 		}
 		
